@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divadlo Kalich – redesign homepage</title>
+  <meta name="description" content="Program, repertoár a vstupenky pro Divadlo Kalich, Komorní Kalich a Prima Hvězdné léto.">
+  <meta name="theme-color" content="#1f4eb6">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Přeskočit na obsah</a>
+
+<header class="site-header">
+  <div class="scene-logos container-xxl">
+    <a href="https://www.divadlokalich.cz/komorni-kalich/" class="scene-logo scene-logo--side">
+      <img src="https://www.divadlokalich.cz/images/logo/komorni-kalich.jpg?v2" alt="Komorní Kalich">
+    </a>
+    <a href="https://www.divadlokalich.cz/divadlo-kalich/" class="scene-logo scene-logo--main">
+      <img src="https://www.divadlokalich.cz/images/logo/divadlo-kalich-27.png" alt="Divadlo Kalich">
+    </a>
+    <a href="https://www.divadlokalich.cz/hvezdne-leto/" class="scene-logo scene-logo--side">
+      <img src="https://www.divadlokalich.cz/images/logo/hvezdne-leto.jpg?v2" alt="Prima Hvězdné léto">
+    </a>
+  </div>
+
+  <nav class="main-nav navbar navbar-expand-lg" aria-label="Hlavní navigace">
+    <div class="container-xxl">
+      <a class="navbar-brand d-lg-none" href="https://www.divadlokalich.cz/divadlo-kalich/">Divadlo Kalich</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Zobrazit menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <a class="nav-identity d-none d-xl-flex" href="https://www.divadlokalich.cz/divadlo-kalich/" aria-label="Divadlo Kalich">
+          <img src="https://www.divadlokalich.cz/images/logo/divadlo-kalich-27.png" alt="">
+        </a>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#program">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="#repertoar">Repertoár</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aktuality">Aktuality</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.divadlokalich.cz/divadlo-kalich/o-divadle/?parent=o-divadle">O divadle</a></li>
+          <li class="nav-item"><a class="nav-link" href="#prakticke">Pro diváky</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.divadlokalich.cz/divadlo-kalich/kontakty/pokladna/">Kontakt</a></li>
+        </ul>
+        <div class="nav-quick">
+          <button class="nav-search-toggle" type="button" aria-label="Hledat"><i class="bi bi-search"></i></button>
+          <a href="https://www.divadlokalich.cz/zvyhodnene-nabidky/">Zvýhodněné vstupenky</a>
+          <a class="nav-ticket" href="https://www.divadlokalich.cz/divadlo-kalich/program/">Koupit vstupenky</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header-search-panel" hidden>
+    <div class="container-xxl">
+      <form class="header-search-form">
+        <i class="bi bi-search"></i>
+        <input id="headerSearch" type="search" placeholder="Hledat inscenaci, aktualitu nebo informace pro diváky">
+        <button type="submit">Hledat</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="stage-section" aria-label="Doporučená představení">
+    <div class="container-xxl">
+      <div class="stage-layout">
+        <div class="swiper stage-swiper">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide stage-slide">
+              <img src="https://www.divadlokalich.cz/images/c/5018-exact-1330x570x32.jpg" alt="Přání">
+              <div class="stage-caption">
+                <div>
+                  <h1>Přání</h1>
+                  <p>17. 9. 2026 · 19:00 · Divadlo Kalich</p>
+                </div>
+                <a href="https://www.divadlokalich.cz/divadlo-kalich/objednat-vstupenky/79420/">Vstupenky</a>
+              </div>
+            </article>
+            <article class="swiper-slide stage-slide">
+              <img src="https://www.divadlokalich.cz/images/c/3217-exact-1330x570x38.jpg" alt="Krysař">
+              <div class="stage-caption">
+                <div>
+                  <h2>Krysař</h2>
+                  <p>18. 9. 2026 · 19:00 · Divadlo Kalich</p>
+                </div>
+                <a href="https://www.divadlokalich.cz/divadlo-kalich/objednat-vstupenky/77635/">Vstupenky</a>
+              </div>
+            </article>
+            <article class="swiper-slide stage-slide">
+              <img src="https://www.divadlokalich.cz/images/c/5642-exact-1330x570x0.jpg" alt="Herečka sobotní noci">
+              <div class="stage-caption">
+                <div>
+                  <h2>Herečka sobotní noci</h2>
+                  <p>17. 9. 2026 · 19:00 · Komorní Kalich</p>
+                </div>
+                <a href="https://www.divadlokalich.cz/komorni-kalich/objednat-vstupenky/80400/">Vstupenky</a>
+              </div>
+            </article>
+          </div>
+          <button class="stage-arrow stage-arrow--prev" type="button" aria-label="Předchozí představení"><i class="bi bi-chevron-left"></i></button>
+          <button class="stage-arrow stage-arrow--next" type="button" aria-label="Další představení"><i class="bi bi-chevron-right"></i></button>
+        </div>
+
+        <aside class="stage-program">
+          <h2>Nejbližší představení</h2>
+          <a class="stage-program__row" href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/hrdy-budzes/">
+            <time><strong>16</strong><span>září</span></time>
+            <span class="stage-program__name"><strong>Hrdý Budžes</strong><small>19:00 · Divadlo Kalich</small></span>
+            <span class="status status--sold">Vyprodáno</span>
+          </a>
+          <a class="stage-program__row" href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/prani/">
+            <time><strong>17</strong><span>září</span></time>
+            <span class="stage-program__name"><strong>Přání</strong><small>19:00 · Divadlo Kalich</small></span>
+            <span class="status">Vstupenky</span>
+          </a>
+          <a class="stage-program__row" href="https://www.divadlokalich.cz/komorni-kalich/repertoar/herecka-sobotni-noci/">
+            <time><strong>17</strong><span>září</span></time>
+            <span class="stage-program__name"><strong>Herečka sobotní noci</strong><small>19:00 · Komorní Kalich</small></span>
+            <span class="status">Vstupenky</span>
+          </a>
+          <a class="stage-program__row" href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/krysar/">
+            <time><strong>18</strong><span>září</span></time>
+            <span class="stage-program__name"><strong>Krysař</strong><small>19:00 · Divadlo Kalich</small></span>
+            <span class="status">Vstupenky</span>
+          </a>
+          <a class="stage-program__all" href="https://www.divadlokalich.cz/">Celý program všech scén <i class="bi bi-arrow-right"></i></a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="event-finder" aria-label="Vyhledání představení">
+    <div class="container-xxl">
+      <form class="event-finder__form">
+        <div class="event-finder__query">
+          <i class="bi bi-search"></i>
+          <input type="search" placeholder="Co chcete vidět?">
+        </div>
+        <select aria-label="Datum">
+          <option>Datum</option>
+          <option>Dnes</option>
+          <option>Zítra</option>
+          <option>Tento týden</option>
+          <option>Tento měsíc</option>
+        </select>
+        <select aria-label="Scéna">
+          <option>Všechny scény</option>
+          <option>Divadlo Kalich</option>
+          <option>Komorní Kalich</option>
+          <option>Prima Hvězdné léto</option>
+        </select>
+        <button type="submit">Najít představení</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="warning-strip">
+    <div class="container-xxl">
+      <strong>Upozornění:</strong> Neručíme za platnost vstupenek zakoupených jinde než na stránkách Divadla Kalich. Nepodporujte prosím překupníky vstupenek.
+    </div>
+  </section>
+
+  <section class="program-section" id="program">
+    <div class="container-xxl">
+      <div class="section-title-row">
+        <h2>Program všech scén</h2>
+        <div class="program-actions">
+          <a href="https://www.divadlokalich.cz/zvyhodnene-nabidky/">Zvýhodněné vstupenky na poslední chvíli</a>
+          <a href="https://www.divadlokalich.cz/aktualni-repertoar/">Aktuální repertoár</a>
+        </div>
+      </div>
+
+      <div class="scene-tabs" role="group" aria-label="Filtrovat podle scény">
+        <button class="scene-tab active" type="button" data-filter="all">Všechny scény</button>
+        <button class="scene-tab" type="button" data-filter="divadlo">Divadlo Kalich <span>Jungmannova 9</span></button>
+        <button class="scene-tab" type="button" data-filter="komorni">Komorní Kalich <span>Rytířská 31</span></button>
+        <button class="scene-tab" type="button" data-filter="leto">Prima Hvězdné léto <span>Mahlerovy sady 1</span></button>
+      </div>
+
+      <div class="program-table" id="programList">
+        <div class="program-row" data-scene="divadlo">
+          <div class="program-date"><span>St</span><strong>16. 9.</strong></div>
+          <div class="program-time">19:00</div>
+          <div class="program-title"><a href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/hrdy-budzes/">Hrdý Budžes</a><small>Činohra · přesun z 2. 4. a 4. 11. 2025</small></div>
+          <div class="program-scene">Divadlo Kalich</div>
+          <div class="program-buy sold">Vyprodáno</div>
+        </div>
+        <div class="program-row" data-scene="komorni">
+          <div class="program-date"><span>St</span><strong>16. 9.</strong></div>
+          <div class="program-time">19:00</div>
+          <div class="program-title"><a href="https://www.divadlokalich.cz/komorni-kalich/repertoar/oko-tygra/">Oko tygra</a><small>Činohra</small></div>
+          <div class="program-scene">Komorní Kalich</div>
+          <div class="program-buy sold">Vyprodáno</div>
+        </div>
+        <div class="program-row" data-scene="divadlo">
+          <div class="program-date"><span>Čt</span><strong>17. 9.</strong></div>
+          <div class="program-time">19:00</div>
+          <div class="program-title"><a href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/prani/">Přání</a><small>Činohra</small></div>
+          <div class="program-scene">Divadlo Kalich</div>
+          <div class="program-buy"><a href="https://www.divadlokalich.cz/divadlo-kalich/objednat-vstupenky/79420/">Vstupenky</a></div>
+        </div>
+        <div class="program-row" data-scene="komorni">
+          <div class="program-date"><span>Čt</span><strong>17. 9.</strong></div>
+          <div class="program-time">19:00</div>
+          <div class="program-title"><a href="https://www.divadlokalich.cz/komorni-kalich/repertoar/herecka-sobotni-noci/">Herečka sobotní noci</a><small>Činohra</small></div>
+          <div class="program-scene">Komorní Kalich</div>
+          <div class="program-buy"><a href="https://www.divadlokalich.cz/komorni-kalich/objednat-vstupenky/80400/">Vstupenky</a></div>
+        </div>
+        <div class="program-row" data-scene="divadlo">
+          <div class="program-date"><span>Pá</span><strong>18. 9.</strong></div>
+          <div class="program-time">19:00</div>
+          <div class="program-title"><a href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/krysar/">Krysař</a><small>Muzikál</small></div>
+          <div class="program-scene">Divadlo Kalich</div>
+          <div class="program-buy"><a href="https://www.divadlokalich.cz/divadlo-kalich/objednat-vstupenky/77635/">Vstupenky</a></div>
+        </div>
+        <div class="program-row" data-scene="komorni">
+          <div class="program-date"><span>Pá</span><strong>18. 9.</strong></div>
+          <div class="program-time">19:00</div>
+          <div class="program-title"><a href="https://www.divadlokalich.cz/komorni-kalich/repertoar/dokonala-fraska/">Dokonalá fraška</a><small>Činohra</small></div>
+          <div class="program-scene">Komorní Kalich</div>
+          <div class="program-buy"><a href="https://www.divadlokalich.cz/komorni-kalich/objednat-vstupenky/80401/">Vstupenky</a></div>
+        </div>
+        <div class="program-row" data-scene="divadlo">
+          <div class="program-date"><span>So</span><strong>19. 9.</strong></div>
+          <div class="program-time">14:30</div>
+          <div class="program-title"><a href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/krysar/">Krysař</a><small>Muzikál · s autogramiádou</small></div>
+          <div class="program-scene">Divadlo Kalich</div>
+          <div class="program-buy"><a href="https://www.divadlokalich.cz/divadlo-kalich/objednat-vstupenky/77636/">Vstupenky</a></div>
+        </div>
+        <div class="program-row" data-scene="divadlo">
+          <div class="program-date"><span>So</span><strong>19. 9.</strong></div>
+          <div class="program-time">19:00</div>
+          <div class="program-title"><a href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/krysar/">Krysař</a><small>Muzikál</small></div>
+          <div class="program-scene">Divadlo Kalich</div>
+          <div class="program-buy"><a href="https://www.divadlokalich.cz/divadlo-kalich/objednat-vstupenky/77637/">Vstupenky</a></div>
+        </div>
+      </div>
+      <p class="program-more"><a href="https://www.divadlokalich.cz/">Zobrazit další termíny <i class="bi bi-arrow-right"></i></a></p>
+    </div>
+  </section>
+
+  <section class="repertoire-section" id="repertoar">
+    <div class="container-xxl">
+      <div class="section-title-row">
+        <h2>Aktuálně v repertoáru</h2>
+        <a class="text-link" href="https://www.divadlokalich.cz/aktualni-repertoar/">Celý repertoár</a>
+      </div>
+      <div class="repertoire-grid">
+        <article class="show-card show-card--large">
+          <a href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/krysar/">
+            <img src="https://www.divadlokalich.cz/images/c/3217-exact-1330x570x38.jpg" alt="Krysař">
+            <span class="show-card__body"><strong>Krysař</strong><small>Muzikál · Divadlo Kalich</small></span>
+          </a>
+        </article>
+        <article class="show-card">
+          <a href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/prani/">
+            <img src="https://www.divadlokalich.cz/images/c/5018-exact-1330x570x32.jpg" alt="Přání">
+            <span class="show-card__body"><strong>Přání</strong><small>Činohra · Divadlo Kalich</small></span>
+          </a>
+        </article>
+        <article class="show-card">
+          <a href="https://www.divadlokalich.cz/komorni-kalich/repertoar/herecka-sobotni-noci/">
+            <img src="https://www.divadlokalich.cz/images/c/5642-exact-1330x570x0.jpg" alt="Herečka sobotní noci">
+            <span class="show-card__body"><strong>Herečka sobotní noci</strong><small>Činohra · Komorní Kalich</small></span>
+          </a>
+        </article>
+        <article class="show-card">
+          <a href="https://www.divadlokalich.cz/komorni-kalich/repertoar/oskar-a-ruzova-pani/">
+            <img src="https://www.divadlokalich.cz/images/c/1849-exact-1330x570x0.jpg" alt="Oskar a růžová paní">
+            <span class="show-card__body"><strong>Oskar a růžová paní</strong><small>Činohra · Komorní Kalich</small></span>
+          </a>
+        </article>
+        <article class="show-card">
+          <a href="https://www.divadlokalich.cz/divadlo-kalich/repertoar/nikdy-neni-pozde/">
+            <img src="https://www.divadlokalich.cz/images/c/1929-exact-1330x570x0.jpg" alt="Nikdy není pozdě">
+            <span class="show-card__body"><strong>Nikdy není pozdě</strong><small>Činohra · Divadlo Kalich</small></span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="scenes-section">
+    <div class="container-xxl">
+      <h2>Naše scény</h2>
+      <div class="scene-list">
+        <a href="https://www.divadlokalich.cz/divadlo-kalich/" class="scene-list__row">
+          <img src="https://www.divadlokalich.cz/images/logo/divadlo-kalich-27.png" alt="Divadlo Kalich">
+          <span><strong>Divadlo Kalich</strong><small>Jungmannova 9, Praha 1 · muzikály, činohry, koncerty</small></span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="https://www.divadlokalich.cz/komorni-kalich/" class="scene-list__row">
+          <img src="https://www.divadlokalich.cz/images/logo/komorni-kalich.jpg?v2" alt="Komorní Kalich">
+          <span><strong>Komorní Kalich</strong><small>Rytířská 31, Praha 1 · činohry a představení pro děti</small></span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="https://www.divadlokalich.cz/hvezdne-leto/" class="scene-list__row">
+          <img src="https://www.divadlokalich.cz/images/logo/hvezdne-leto.jpg?v2" alt="Prima Hvězdné léto">
+          <span><strong>Prima Hvězdné léto</strong><small>Mahlerovy sady 1, Praha 3 · letní scéna pod žižkovskou věží</small></span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="news-section" id="aktuality">
+    <div class="container-xxl">
+      <div class="section-title-row">
+        <h2>Aktuality</h2>
+        <a class="text-link" href="https://www.divadlokalich.cz/aktuality/">Všechny aktuality</a>
+      </div>
+      <div class="news-grid">
+        <article class="news-main">
+          <a href="https://www.divadlokalich.cz/divadlo-kalich/aktuality/pojdte-do-divadla-v-tydnu-od-14-zari-/">
+            <img src="https://www.divadlokalich.cz/images/c/5007-exact-440x275.jpg" alt="Pojďte do divadla v týdnu od 14. září">
+            <div>
+              <time datetime="2026-09-11">11. září 2026</time>
+              <h3>Pojďte do divadla v týdnu od 14. září</h3>
+              <p>V týdnu od 14. září už roztáčíme novou sezónu naplno a nemůžeme se dočkat, až se po prázdninách zase bude denně nést divadlem váš smích.</p>
+              <span>Číst více</span>
+            </div>
+          </a>
+        </article>
+        <div class="news-side">
+          <article>
+            <a href="https://www.divadlokalich.cz/hvezdne-leto/aktuality/tesime-se-v-cervnu-2027/">
+              <img src="https://www.divadlokalich.cz/images/c/2661-exact-440x275.jpg" alt="Těšíme se v červnu 2027">
+              <div><time datetime="2026-09-08">8. září 2026</time><h3>Těšíme se v červnu 2027</h3></div>
+            </a>
+          </article>
+          <article>
+            <a href="https://www.divadlokalich.cz/komorni-kalich/aktuality/predprodej-na-listopad-a-prosinec-2026-zahajen/">
+              <img src="https://www.divadlokalich.cz/images/c/5914-exact-440x275.png" alt="Předprodej na listopad a prosinec 2026 zahájen">
+              <div><time datetime="2026-06-25">25. června 2026</time><h3>Předprodej na listopad a prosinec 2026 zahájen</h3></div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container-xxl about-grid">
+      <div class="about-copy">
+        <h2>Divadlo Kalich</h2>
+        <p>Divadlo Kalich je zavedená soukromá pražská scéna. Jeho dramaturgie zahrnuje muzikály, činoherní inscenace současných světových i domácích autorů, koncerty i hry pro děti.</p>
+        <p>Moderní bezbariérový komorní sál sídlí v historických prostorách Husova domu v Jungmannově ulici.</p>
+        <a href="https://www.divadlokalich.cz/divadlo-kalich/o-divadle/?parent=o-divadle">Více o divadle</a>
+      </div>
+      <div class="about-facts">
+        <div><strong>423</strong><span>míst k sezení</span></div>
+        <div><strong>8</strong><span>míst na stání</span></div>
+        <div><strong>Praha 1</strong><span>Jungmannova 9</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visitor-section" id="prakticke">
+    <div class="container-xxl visitor-grid">
+      <div>
+        <h2>Pokladna Divadla Kalich</h2>
+        <p class="visitor-address">Jungmannova 9, Praha 1</p>
+        <dl>
+          <div><dt>Po–Pá</dt><dd>11:00–14:30, 15:00–19:30</dd></div>
+          <div><dt>So–Ne a svátky</dt><dd>12:00–15:00, 15:30–19:30</dd></div>
+          <div><dt>Telefon</dt><dd><a href="tel:+420722922070">722 922 070</a></dd></div>
+        </dl>
+      </div>
+      <div class="visitor-links">
+        <a href="https://www.divadlokalich.cz/divadlo-kalich/kontakty/pokladna/"><strong>Pokladna a způsoby platby</strong><span>Otevírací doba, platby, benefity a slevy</span><i class="bi bi-arrow-right"></i></a>
+        <a href="https://www.divadlokalich.cz/divadlo-kalich/vstupenky/caste-otazky-a-odpovedi/"><strong>Časté otázky</strong><span>Dárkové poukazy, bezbariérovost a předprodej</span><i class="bi bi-arrow-right"></i></a>
+        <a href="https://kalich.ecomailapp.cz/public/form/4-f67e22c6c3dacfc9b77b6b40399abc16"><strong>Odběr novinek</strong><span>Program a zvýhodněné nabídky e-mailem</span><i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container-xxl footer-main">
+    <div class="footer-scenes">
+      <img src="https://www.divadlokalich.cz/images/logo/divadlo-kalich-27.png" alt="Divadlo Kalich">
+      <p>Jungmannova 9, Praha 1</p>
+    </div>
+    <div>
+      <h2>Program a vstupenky</h2>
+      <a href="https://www.divadlokalich.cz/">Program všech scén</a>
+      <a href="https://www.divadlokalich.cz/aktualni-repertoar/">Aktuální repertoár</a>
+      <a href="https://www.divadlokalich.cz/zvyhodnene-nabidky/">Zvýhodněné nabídky</a>
+    </div>
+    <div>
+      <h2>Informace</h2>
+      <a href="https://www.divadlokalich.cz/divadlo-kalich/o-divadle/?parent=o-divadle">O divadle</a>
+      <a href="https://www.divadlokalich.cz/divadlo-kalich/kontakty/pokladna/">Pokladna</a>
+      <a href="https://www.divadlokalich.cz/aktuality/">Aktuality</a>
+    </div>
+    <div class="footer-social">
+      <h2>Sledujte Divadlo Kalich</h2>
+      <div>
+        <a href="https://www.facebook.com/KalichDivadlo/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/divadlo_kalich/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UC86-ydXqYvUIb9Q7TB4Nvcg/videos" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="container-xxl footer-bottom">
+    <span>© Divadlo Kalich</span>
+    <span>Neoficiální redesign homepage</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
